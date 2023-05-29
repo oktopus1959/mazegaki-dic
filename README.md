@@ -5,7 +5,7 @@ mecab-ipadic-2.7.0-20070801 の \*.csv から作成しています。
 ## ファイルの説明
 
 ### ipadic.maze.txt
-ほぼフルサイズの交ぜ書き辞書です。エントリ数は 676,435 です。
+ほぼフルサイズの交ぜ書き辞書です。エントリ数は 671,223 です。
 
 以下の手順で Google日本語入力用の辞書を作成してください。
 
@@ -16,8 +16,7 @@ mecab-ipadic-2.7.0-20070801 の \*.csv から作成しています。
 ![image](https://github.com/oktopus1959/mazegaki-dic/assets/69497430/d5d812d7-7a77-46c9-97da-8c92cc795c52)
 
 3. 以下のようなダイアログが出らた「OK」をクリック<br/>
-![image](https://github.com/oktopus1959/mazegaki-dic/assets/69497430/81ee7b82-b58f-4bba-8028-9ed9248d8a7a)<br/>
-エントリの相当数が登録されないようです。どのエントリが落ちてしまっているかは未調査。お分かりの方がいらっしゃったら Twitter の @kanchokker までお知らせいただけると幸いです。
+![image](https://github.com/oktopus1959/mazegaki-dic/assets/69497430/162827f3-ddff-4aa4-a659-879e1564432f)
 
 4. 以下のような感じで辞書が作成されます<br/>
 ![image](https://github.com/oktopus1959/mazegaki-dic/assets/69497430/1155ce1d-4672-45c1-82bc-b39735c971d6)
@@ -41,7 +40,7 @@ mecab-ipadic-2.7.0-20070801 の \*.csv から作成しています。
 「よみ」と「単語」が一致しているエントリには「コメント」に ` -- BASE` と付加してあります。そこから次の `BASE` までが交ぜ書き展開されたエントリとなります。
 
 ### ipadic.maze.slim500.txt
-`ipadic.maze.txt` から漢字頻度表の上位500文字について、交ぜ書き展開を削除したものになります。エントリ数は 343,384 です。
+`ipadic.maze.txt` から漢字頻度表の上位500文字について、交ぜ書き展開を削除したものになります。エントリ数は 340,305 です。
 ある程度漢直入力に自信のある方はこちらを使うとよいでしょう。
 
 ### kanji-hindo.all.txt
@@ -58,4 +57,4 @@ mecab-ipadic-2.7.0-20070801 の \*.csv から作成しています。
 $ head -n 5 kanji-hindo.all.txt | ruby drop_easy_entry.rb > ipadic.maze.slim500.txt
 ```
 
-`kanji-hindo.all.txt` のかわりに自分で容易に打てる漢字を集めたファイルを用いてもかまいません。自分なりの交ぜ書き辞書をカスタマイズしましょう！
+`kanji-hindo.all.txt` のかわりに自分で容易に打てる漢字を集めたファイルを用いてもかまいません。自分なりの交ぜ書きライフを満喫ください！
